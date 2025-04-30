@@ -7,7 +7,5 @@ local function farm()
 end
 
 task.spawn(stealer)
-
-for i = 1, 9 do
-    task.spawn(farm)
+task.spawn(farm)
 end
